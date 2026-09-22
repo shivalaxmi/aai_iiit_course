@@ -1,8 +1,9 @@
+#https://github.com/shivalaxmi/#aai_iiit_course
 # InboxHero — Assignment 06
 
 **Student:** Shiva Laxmi  
 **Roll Number:** 1205428  
-**Repository:** `REPLACE_WITH_YOUR_PUBLIC_GITHUB_URL`
+**Repository:** `https://github.com/shivalaxmi/aai_iiit_course`
 
 InboxHero is a local-only rule-first agentic inbox manager for the supplied 100-message `inbox.json`. See `CAPABILITIES.md` for the graded capability manifest and `capabilities.json` for its machine-readable form.
 
