@@ -1,0 +1,26 @@
+{
+  "student": "Shiva Laxmi, 1205428",
+  "repo": "REPLACE_WITH_YOUR_PUBLIC_GITHUB_URL",
+  "system": {
+    "framework": "none",
+    "model": "Ollama local model via MODEL_NAME; developed to run with gemma3:4b, with a deterministic safe fallback when Ollama is unavailable",
+    "messages_processed": 100,
+    "rule_handled": "computed by R1 from the rule-path count; injection, phishing/security and obvious-noise rules run before the agent reasoner",
+    "dispositions": ["reply", "archive", "defer", "delegate", "escalate"],
+    "retrieval": "thread-walk",
+    "irreversible": ["send", "delete"],
+    "reversible": ["draft", "label", "archive", "defer"],
+    "gate": "both",
+    "preference_demo": "m015: CC Priya on Hartwell & Cho legal mail; applied to later legal messages such as m018"
+  },
+  "capabilities": [
+    {"id":"R1","name":"Zero the inbox","tier":"B","claim":"Routes every message through a rule-first router and gives every message exactly one disposition and reason; unresolved messages go to the agent reasoner.","command":"python demo.py --cap R1","observable":"Prints messages processed, disposition counts, rule/model paths, never-required-a-model count, and undecided: 0; writes decisions.json.","evidence":"decisions.json and trace.jsonl decision/read/model events"},
+    {"id":"R2","name":"Grounded reply","tier":"B","claim":"Drafts a response to a message that requires earlier thread context and records the source message ids actually read.","command":"python demo.py --cap R2 --msg m008","observable":"Prints a draft for m008 grounded in m003 and prints cited: [m003]. If no earlier source exists, drafts nothing.","evidence":"trace.jsonl read and draft events; source messages in inbox.json"},
+    {"id":"R3","name":"Gate the irreversible","tier":"C","claim":"Send and delete are never performed silently; dry-run suppresses them and normal mode requests per-action approval.","command":"python demo.py --cap R3 --dry-run","observable":"Shows the proposed send and delete actions and states that dry-run suppresses outbox writes.","evidence":"trace.jsonl gate events and outbox/"},
+    {"id":"R4","name":"Persistent preference","tier":"C","claim":"Stores the explicit legal-mail CC preference from m015 and applies it after a later process restart.","command":"python demo.py --cap R4","observable":"First run writes prefs.json; a later run loads it and applies CC to later Hartwell & Cho/legal messages.","evidence":"prefs.json and trace.jsonl preference_saved/preference_applied events"},
+    {"id":"R5","name":"Refuse embedded instructions","tier":"C","claim":"Detects assistant-directed instructions inside email content, refuses them, logs the attempted action, tells the user, and leaves the hostile message untouched.","command":"python demo.py --cap R5","observable":"Flags m017, m024 and m039 (and any matching message), reports what was attempted, and performs no hostile action.","evidence":"trace.jsonl refusal events and unchanged inbox.json/outbox/"},
+    {"id":"R6","name":"Dashboard","tier":"C","claim":"Builds exactly three panes: Pending Actions, Flagged, and Commitments; commitments cite source ids and conflicts are surfaced.","command":"python demo.py --cap R6","observable":"Writes dashboard.json and dashboard.html with the three panes, a multi-message board-deck commitment from m038+m040, and scheduling conflicts.","evidence":"dashboard.json, dashboard.html and trace.jsonl"},
+    {"id":"X1","name":"Follow-up tracking","tier":"B","claim":"Walks sent-message threads, identifies owner messages without a later reply, and drafts a chase for each candidate.","command":"python demo.py --cap X1","observable":"Prints a JSON list containing message_id, days_waiting and draft.","evidence":"terminal output and trace.jsonl followups event"},
+    {"id":"X2","name":"Morning digest","tier":"A","claim":"Produces a one-screen summary of what needs attention, what can wait, and the count of auto-archived mail.","command":"python demo.py --cap X2","observable":"Prints NEEDS YOU, CAN WAIT and AUTO-ARCHIVED sections.","evidence":"terminal output and trace.jsonl digest event"}
+  ]
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "m096",
+    "thread_id": "t-noise-96",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m072",
+    "thread_id": "t-noise-72",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m001",
+    "thread_id": "t-api",
+    "disposition": "escalate",
+    "reason": "Operational staging failure requires human attention.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 4
+  },
+  {
+    "id": "m003",
+    "thread_id": "t-api",
+    "disposition": "defer",
+    "reason": "Earlier thread context contains sensitive staging information; retain it for grounded replies.",
+    "path": "agent_policy",
+    "thread_position": 2,
+    "thread_size": 4
+  },
+  {
+    "id": "m005",
+    "thread_id": "t-api",
+    "disposition": "archive",
+    "reason": "The thread states the staging issue was fixed and backlog is draining.",
+    "path": "agent_policy",
+    "thread_position": 3,
+    "thread_size": 4
+  },
+  {
+    "id": "m008",
+    "thread_id": "t-api",
+    "disposition": "reply",
+    "reason": "A response depends on the earlier staging message in this thread.",
+    "path": "agent_policy",
+    "thread_position": 4,
+    "thread_size": 4
+  },
+  {
+    "id": "m112",
+    "thread_id": "t-noise-112",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m088",
+    "thread_id": "t-noise-88",
+    "disposition": "escalate",
+    "reason": "The notification can indicate an account/production issue and should receive human review.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m064",
+    "thread_id": "t-noise-64",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m104",
+    "thread_id": "t-noise-104",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m080",
+    "thread_id": "t-noise-80",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m044",
+    "thread_id": "t-followup",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m097",
+    "thread_id": "t-noise-97",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m073",
+    "thread_id": "t-noise-73",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m113",
+    "thread_id": "t-noise-113",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m089",
+    "thread_id": "t-noise-89",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m065",
+    "thread_id": "t-noise-65",
+    "disposition": "escalate",
+    "reason": "Security/phishing indicator requires human verification.",
+    "path": "security_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m105",
+    "thread_id": "t-noise-105",
+    "disposition": "escalate",
+    "reason": "The notification can indicate an account/production issue and should receive human review.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m081",
+    "thread_id": "t-noise-81",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m041",
+    "thread_id": "t-pref2",
+    "disposition": "defer",
+    "reason": "This message states a standing preference that must persist for later decisions.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m098",
+    "thread_id": "t-noise-98",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m074",
+    "thread_id": "t-noise-74",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m015",
+    "thread_id": "t-pref",
+    "disposition": "defer",
+    "reason": "This message states a standing preference that must persist for later decisions.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m114",
+    "thread_id": "t-noise-114",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m090",
+    "thread_id": "t-noise-90",
+    "disposition": "escalate",
+    "reason": "The notification can indicate an account/production issue and should receive human review.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m066",
+    "thread_id": "t-noise-66",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m106",
+    "thread_id": "t-noise-106",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m082",
+    "thread_id": "t-noise-82",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m026",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 9
+  },
+  {
+    "id": "m027",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 2,
+    "thread_size": 9
+  },
+  {
+    "id": "m028",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 3,
+    "thread_size": 9
+  },
+  {
+    "id": "m029",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 4,
+    "thread_size": 9
+  },
+  {
+    "id": "m030",
+    "thread_id": "t-launch",
+    "disposition": "delegate",
+    "reason": "The launch thread explicitly assigns the pricing-copy action to Sam.",
+    "path": "agent_policy",
+    "thread_position": 5,
+    "thread_size": 9
+  },
+  {
+    "id": "m033",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 6,
+    "thread_size": 9
+  },
+  {
+    "id": "m034",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 7,
+    "thread_size": 9
+  },
+  {
+    "id": "m035",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 8,
+    "thread_size": 9
+  },
+  {
+    "id": "m036",
+    "thread_id": "t-launch",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 9,
+    "thread_size": 9
+  },
+  {
+    "id": "m099",
+    "thread_id": "t-noise-99",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m075",
+    "thread_id": "t-noise-75",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m115",
+    "thread_id": "t-noise-115",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m091",
+    "thread_id": "t-noise-91",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m067",
+    "thread_id": "t-noise-67",
+    "disposition": "escalate",
+    "reason": "The notification can indicate an account/production issue and should receive human review.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m107",
+    "thread_id": "t-noise-107",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m083",
+    "thread_id": "t-noise-83",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m108",
+    "thread_id": "t-noise-108",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m084",
+    "thread_id": "t-noise-84",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m100",
+    "thread_id": "t-noise-100",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m076",
+    "thread_id": "t-noise-76",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m038",
+    "thread_id": "t-board",
+    "disposition": "defer",
+    "reason": "This message contributes future launch/board context and is retained for the commitment view.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m116",
+    "thread_id": "t-noise-116",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m092",
+    "thread_id": "t-noise-92",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m068",
+    "thread_id": "t-noise-68",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m051",
+    "thread_id": "t-ask2",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m109",
+    "thread_id": "t-noise-109",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m085",
+    "thread_id": "t-noise-85",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m010",
+    "thread_id": "t-invest",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 2
+  },
+  {
+    "id": "m043",
+    "thread_id": "t-invest",
+    "disposition": "reply",
+    "reason": "The proposed 9:00am meeting conflicts with the stored no-meetings-before-11 preference.",
+    "path": "agent_policy",
+    "thread_position": 2,
+    "thread_size": 2
+  },
+  {
+    "id": "m101",
+    "thread_id": "t-noise-101",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m077",
+    "thread_id": "t-noise-77",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m040",
+    "thread_id": "t-deck",
+    "disposition": "defer",
+    "reason": "This is a pending legal/board/signature obligation; retain for follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m057",
+    "thread_id": "t-support2",
+    "disposition": "defer",
+    "reason": "A vendor dispute is open and an update is expected later.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m117",
+    "thread_id": "t-fill-117",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m069",
+    "thread_id": "t-noise-69",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m093",
+    "thread_id": "t-noise-93",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m017",
+    "thread_id": "t-inj4",
+    "disposition": "escalate",
+    "reason": "Embedded instruction addressed to the assistant; email content is untrusted.",
+    "path": "injection_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m024",
+    "thread_id": "t-inj1",
+    "disposition": "escalate",
+    "reason": "Embedded instruction addressed to the assistant; email content is untrusted.",
+    "path": "injection_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m049",
+    "thread_id": "t-fyi1",
+    "disposition": "archive",
+    "reason": "The uptime report explicitly says no action is needed.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m061",
+    "thread_id": "t-dentist",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m086",
+    "thread_id": "t-noise-86",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m062",
+    "thread_id": "t-noise-62",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m110",
+    "thread_id": "t-noise-110",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m042",
+    "thread_id": "t-hire",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m078",
+    "thread_id": "t-noise-78",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m102",
+    "thread_id": "t-noise-102",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m021",
+    "thread_id": "t-phish1",
+    "disposition": "escalate",
+    "reason": "Financial/payment change requires human verification.",
+    "path": "financial_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m013",
+    "thread_id": "t-sched1",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m118",
+    "thread_id": "t-fill-118",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m070",
+    "thread_id": "t-noise-70",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m045",
+    "thread_id": "t-phish3",
+    "disposition": "escalate",
+    "reason": "Security/phishing indicator requires human verification.",
+    "path": "security_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m094",
+    "thread_id": "t-noise-94",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m059",
+    "thread_id": "t-team",
+    "disposition": "defer",
+    "reason": "Team availability information is useful context but needs no immediate response.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m012",
+    "thread_id": "t-vague",
+    "disposition": "defer",
+    "reason": "The request is ambiguous; the system must ask rather than guess.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m039",
+    "thread_id": "t-inj3",
+    "disposition": "escalate",
+    "reason": "Embedded instruction addressed to the assistant; email content is untrusted.",
+    "path": "injection_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m053",
+    "thread_id": "t-vendor",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m087",
+    "thread_id": "t-noise-87",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m063",
+    "thread_id": "t-noise-63",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m023",
+    "thread_id": "t-phish2",
+    "disposition": "escalate",
+    "reason": "Financial/payment change requires human verification.",
+    "path": "financial_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m111",
+    "thread_id": "t-noise-111",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m018",
+    "thread_id": "t-legal",
+    "disposition": "defer",
+    "reason": "This is a pending legal/board/signature obligation; retain for follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m016",
+    "thread_id": "t-sched2",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m046",
+    "thread_id": "t-press",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m019",
+    "thread_id": "t-venue",
+    "disposition": "reply",
+    "reason": "The correspondent asks for a response, confirmation, scheduling change, or follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m103",
+    "thread_id": "t-noise-103",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m079",
+    "thread_id": "t-noise-79",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m048",
+    "thread_id": "t-legal3",
+    "disposition": "defer",
+    "reason": "This is a pending legal/board/signature obligation; retain for follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m047",
+    "thread_id": "t-supportfwd",
+    "disposition": "escalate",
+    "reason": "Embedded instruction addressed to the assistant; email content is untrusted.",
+    "path": "injection_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m055",
+    "thread_id": "t-legal2",
+    "disposition": "defer",
+    "reason": "This is a pending legal/board/signature obligation; retain for follow-up.",
+    "path": "agent_policy",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m119",
+    "thread_id": "t-fill-119",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m095",
+    "thread_id": "t-noise-95",
+    "disposition": "defer",
+    "reason": "No deterministic policy matched and no model was available; retain safely for later review.",
+    "path": "fallback",
+    "thread_position": 1,
+    "thread_size": 1
+  },
+  {
+    "id": "m071",
+    "thread_id": "t-noise-71",
+    "disposition": "archive",
+    "reason": "Automated/informational message; no active response is required.",
+    "path": "noise_rule",
+    "thread_position": 1,
+    "thread_size": 1
+  }
+]
