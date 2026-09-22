@@ -29,7 +29,7 @@ For R4, the first run creates `prefs.json`; the second run demonstrates behavior
 
 ## Configuration
 
-The local model is configured through environment variables in `config.py`:
+The local model is configured through environment variables in `model_client.py`:
 
 ```text
 MODEL_PROVIDER=ollama
