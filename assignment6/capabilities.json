@@ -1,6 +1,6 @@
 {
   "student": "Shiva Laxmi, 1205428",
-  "repo": "REPLACE_WITH_YOUR_PUBLIC_GITHUB_URL",
+  "repo": "https://github.com/shivalaxmi/aai_iiit_course.git",
   "system": {
     "framework": "none",
     "model": "Ollama local model via MODEL_NAME; developed to run with gemma3:4b, with a deterministic safe fallback when Ollama is unavailable",
